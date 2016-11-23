@@ -4,7 +4,8 @@
   "description": "Simple React Redux Example use",
   "main": "index.html",
   "scripts": {
-    "dev": "webpack-dev-server --colors --inline --content-base public/"
+    "dev": "webpack-dev-server --colors --inline --content-base public/",
+    "build": "webpack -p --config ./webpack.config.prod.js"
   },
   "repository": {
     "type": "git",
@@ -41,6 +42,7 @@
     "babel-plugin-transform-object-assign": "^6.5.0",
     "babel-plugin-transform-proto-to-assign": "^6.9.0",
     "babel-preset-es2015-loose": "^7.0.0",
+    "compression-webpack-plugin": "^0.3.2",
     "react": "^15.2.0",
     "react-dom": "^15.4.1",
     "react-hot-loader": "^3.0.0-beta.6",
