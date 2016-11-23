@@ -1,11 +1,11 @@
-
 var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
   entry: [
-    'webpack-hot-middleware/client',
+    'webpack/hot/only-dev-server',
+    'webpack-dev-server/client?http://localhost:8080',
     './app/index'
   ],
   output: {
@@ -19,18 +19,10 @@ module.exports = {
   module: {
     loaders: [
     {
-      test: /.jsx?$/,
-      loader: 'babel-loader',
-      exclude: /node_modules/,
-      query: {
-        presets: ['es2015', 'react']
-      }
-    },
-    // {
-    //   test: /\.js$/,
-    //   loaders: ['react-hot', 'babel'],
-    //   include: path.join(__dirname, 'src')
-    // }
+      test: /\.js$/,
+      loaders: ['babel'],
+      include: path.join(__dirname, 'app')
+    }
   ]
   }
 };
