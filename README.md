@@ -11,4 +11,4 @@ npm run dev
 open http://localhost:8080/
 ```
 
-!['gif exemple'](http://www.giphy.com/gifs/l3vQWZDpixq04zqLe)
+![](example.gif)
