@@ -1,2 +1,8 @@
 # reactReduxExample
-Example of use redux with react
+
+##Example for use redux with react
+
+for see in browser, tap in terminal:
+
+npm install
+npm run dev
