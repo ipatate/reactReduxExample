@@ -1,3 +1,4 @@
+// file constant for share with reducer
 import * as Action from '../constants/message';
 
 export const message = (state = '', action) => {

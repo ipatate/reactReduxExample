@@ -1,7 +1,10 @@
 import React, { Component, PropTypes } from 'react';
+// for connect component to redux
 import { connect } from 'react-redux';
+// action file for dispatch message
 import * as Action from './redux/actions/message';
 
+// components form and display
 import Form from './components/Form';
 import DisplayMessage from './components/DisplayMessage';
 
@@ -23,11 +26,12 @@ export class App extends Component {
     );
   }
 }
-
+// the state listen by this component
 function mapStateToProps(store) {
   return {
     message: store.message,
   };
 }
 
+// connect App to redux
 export default connect(mapStateToProps)(App);
